@@ -1,0 +1,232 @@
+/* css reset */
+body {
+    background-color: #000000; /*Add your desired background color*/
+    font-family: 'Genos', sans-serif;
+    /* background: url('Free Universe Stars Video Gif Animated Zoom Virtual Background.gif') no-repeat center center/cover; */
+
+
+}
+
+
+/* Navigationbar styling */
+
+.navbar{
+    display: flex;
+    align-items: center;    
+    border-radius: 20px;
+    position: sticky;
+    justify-content: space-between;
+ 
+}
+.navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+
+/* logo and img styling of navbar */
+#logo{
+    margin: -8px 20px;
+}
+#logo img{
+    height: 120px;
+    padding: 10px;
+}   
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar li{
+    list-style: none; 
+    margin: 5px 5px 5px 5px;
+    /* font-family:cursive; */
+    font-size:180%;
+    
+    
+}
+.navbar li a{
+    display: block;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+.navbar ul li a:hover{
+    color: rgb(44, 117, 241);
+    background-color: rgb(2, 2, 2);
+    border-radius: 50px;
+    border: 3px solid white ;
+    
+}
+
+/* section styling */
+#home {
+    min-height: 77vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    /* background: url('Free Universe Stars Video Gif Animated Zoom Virtual Background.gif'); */
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    border-radius: 20px;
+    background-color: #2574b100; /*Set a background color for the section */
+    font-size: 120%;
+}
+
+.a img{
+    height: 300px;
+    padding: 40px;
+}
+
+.home-content{
+    max-width: 90%;
+}
+
+.home-content h1{
+    font-family: 'Miltonian', serif;
+    font-size:210%;
+    color: rgb(255, 255, 255);
+    line-height: 0.1%;
+}
+
+.home-content h3{
+    font-size: 180% ;
+    font-weight: 600;
+    color: rgb(242, 255, 0);
+}
+.home-content p{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 120%;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+.home-content .btn-box{
+    display: block;
+    width: fit-content;
+}
+
+.btn-box a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 3px solid bisque;
+    padding: 0.5rem 0.9rem; 
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.btn-box a:hover{
+    color: #000;
+    background-color: bisque;
+    border-radius: 10px;    
+}
+
+.home-media{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home-media a{
+    display: inline-flex;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: bisque;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: 130%;
+    
+
+}
+
+.home-media a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 90, 255);
+    
+       
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url('../contact.jpg') no-repeat center center/cover; */
+
+}
+
+.h{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Genos', sans-serif;
+    color: white;
+
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-color: #000000; /*Add your desired background color*/
+    color: white;
+    border: 2px solid bisque;
+    border-radius: 10px;
+} 
+
+.contact-box form{
+    width: 40%;
+}
+
+.contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Genos', sans-serif;
+
+}
+
+
+
+footer{
+    color: rgb(0, 229, 255);
+    font-size: larger;
+}
+
+@media only screen and (max-width: 768px) {
+    #home{
+        flex-direction: column;
+    }
+  }
